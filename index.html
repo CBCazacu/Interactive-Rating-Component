@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="ratings" class="rating-screen">
+
+        <div class="circle circle-icon"><img class="icon-star" src="/images/icon-star.svg" alt="star"></div>
+
+        <h1 class="question">How did we do?</h1>
+
+        <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+        <div class="rating-score">
+
+            <div class="circle">
+                <button class="number" onclick="selectNumber(this)">1</button>
+            </div>
+            <div class="circle">
+                <button class="number" onclick="selectNumber(this)">2</button>
+            </div>
+            <div class="circle">
+                <button class="number" onclick="selectNumber(this)">3</button>
+            </div>
+            <div class="circle">
+                <button class="number" onclick="selectNumber(this)">4</button>
+            </div>
+            <div class="circle">
+                <button class="number" onclick="selectNumber(this)">5</button>
+            </div>
+
+
+        </div>
+
+        <button id="submit" class="submit-button" onclick="submitRating()">SUBMIT</button>
+
+    </div>
+
+
+    <div id="thanks" class="thank-you-screen">
+
+        <img class="phone-image" src="/images/illustration-thank-you.svg" alt="image">
+
+        <p class="rating-statement">You selected <span class="grade"></span> out of 5</p>
+
+        <h1 class="thank-you-title">Thank you!</h1>
+
+        <p class="rating-comment">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+    </div>
+
+    <script src="action.js"></script>
+    
+</body>
+</html>
